@@ -1,0 +1,58 @@
+﻿@model Blood_Test_Unit.Models.Blood_Samples
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Blood_Samples</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blood_Samples1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blood_Samples1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dna)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dna)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Turn_Away)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Turn_Away)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.sampleID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
